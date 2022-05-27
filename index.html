@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>YT - Youtube</title>
+    <link rel="shortcut icon" href="assets/img/yt-logo2.png" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css" /> <!--memanggil file css-->
+    <script src="assets/js/script.js"></script> <!--memanggil file js-->
+
+</head>
+
+<body>
+    <!-- header -->
+    <header class="header">
+        <div class="logo left">
+            <i id="menu" class="material-icons">menu</i>
+            <a href="#"><img src="assets/img/yt-logo.png"></a>
+        </div>
+
+        <div class="search center">
+            <form action="">
+                <input type="text" id="search" placeholder="Search" />
+                <button><i class="material-icons">search</i></button>
+            </form>
+            <i class="material-icons mic" onclick="myFunction1()" id="demo">mic</i>
+        </div>
+
+        <div class="icons right">
+            <i class="material-icons">videocam</i>
+            <i class="material-icons">apps</i>
+            <i class="material-icons">notifications</i>
+            <i class="material-icons display-this">account_circle</i>
+        </div>
+    </header>
+    <!-- akhir header -->
+
+
+    <main>
+        <!-- menu sidebar-->
+        <div class=”side-bar”>
+            <!-- navigasi -->
+            <div class="nav" >
+                <a class="nav-link active">
+                    <i class="material-icons">home</i>
+                    <span>Home</span>
+                </a>
+                <a class="nav-link">
+                    <i class="material-icons">local_fire_department</i>
+                    <span>Trending</span>
+                </a>
+                <a class="nav-link">
+                    <i class="material-icons">subscriptions</i>
+                    <span>Subscriptions</span>
+                </a>
+                <hr>
+                <a class="nav-link">
+                    <i class="material-icons">library_add_check</i>
+                    <span>Library</span>
+                </a>
+                <a class="nav-link">
+                    <i class="material-icons">history</i>
+                    <span>History</span>
+                </a>
+                <a class="nav-link">
+                    <i class="material-icons">play_arrow</i>
+                    <span>Your Videos</span>
+                </a>
+                <a class="nav-link">
+                    <i class="material-icons">watch_later</i>
+                    <span>Watch Later</span>
+                </a>
+                <a class="nav-link">
+                    <i class="material-icons">thumb_up</i>
+                    <span>Liked Videos</span>
+                </a>
+                <hr>
+                <a class="nav-link">
+                    <span>
+                        <h3 style="font-family: 'Roboto', sans-serif; margin-right: 0px;">SUBSCRIPTIONS</h3>
+                    </span>
+                    <br>
+                </a>
+                <a class="nav-link">
+                    <div class="details">
+                        <div class="author">
+                            <img src="assets/img/yt-simplilearn.jpg"
+                                style="border-radius: 50%; height: 25px; width: 25px; margin-left: 7.5px;" alt="">
+                        </div>
+                        <div class="title">
+                            <span style="margin-top: 5px;">Simplilearn</span>
+                        </div>
+                    </div>
+                </a>
+                <a class="nav-link">
+                    <div class="details">
+
+                        <div class="author">
+                            <img src="assets/img/yt-hybelabels.jpg"
+                                style="border-radius: 50%; height: 25px; width: 25px; margin-left: 7.5px;" alt="">
+                        </div>
+                        <div class="title">
+                            <span style="margin-top: 5px;">HYBE LABELS</span>
+                        </div>
+                    </div>
+                </a>
+                <a class="nav-link">
+                    <div class="details">
+                        <div class="author">
+                            <img src="assets/img/yt-music travel.jpg"
+                                style="border-radius: 50%; height: 25px; width: 25px; margin-left: 7.5px;" alt="">
+                        </div>
+                        <div class="title">
+                            <span style="margin-top: 5px;">Music Travel Love</span>
+                        </div>
+                    </div>
+                </a>
+                <!-- show more subscriptions -->
+                <span id="more">
+                    <a class="nav-link">
+                        <div class="details">
+
+                            <div class="author">
+                                <img src="assets/img/yt-anthem lights.jpg"
+                                    style="border-radius: 50%; height: 25px; width: 25px; margin-left: 7.5px;" alt="">
+                            </div>
+                            <div class="title">
+                                <span style="margin-top: 5px;">Anthem Lights</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="nav-link">
+                        <div class="details">
+
+                            <div class="author">
+                                <img src="assets/img/yt-coldplay.jpg"
+                                    style="border-radius: 50%; height: 25px; width: 25px; margin-left: 7.5px;" alt="">
+                            </div>
+                            <div class="title">
+                                <span style="margin-top: 5px;">Coldplay</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="nav-link">
+                        <div class="details">
+
+                            <div class="author">
+                                <img src="assets/img/yt-nihongo mantappu.jpg"
+                                    style="border-radius: 50%; height: 25px; width: 25px; margin-left: 7.5px;" alt="">
+                            </div>
+                            <div class="title">
+                                <span style="margin-top: 5px;">Nihongo Mantappu</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="nav-link">
+                        <div class="details">
+
+                            <div class="author">
+                                <img src="assets/img/yt-yeshua.jpg"
+                                    style="border-radius: 50%; height: 25px; width: 25px; margin-left: 7.5px;" alt="">
+                            </div>
+                            <div class="title">
+                                <span style="margin-top: 5px;">Yeshua Abraham</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="nav-link">
+                        <div class="details">
+
+                            <div class="author">
+                                <img src="assets/img/yt-one young world.jpg"
+                                    style="border-radius: 50%; height: 25px; width: 25px; margin-left: 7.5px;" alt="">
+                            </div>
+                            <div class="title">
+                                <span style="margin-top: 5px;">One Young World</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="nav-link">
+                        <div class="details">
+
+                            <div class="author">
+                                <img src="assets/img/yt-onno center.jpg"
+                                    style="border-radius: 50%; height: 25px; width: 25px; margin-left: 7.5px;" alt="">
+                            </div>
+                            <div class="title">
+                                <span style="margin-top: 5px;">Onno Center</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="nav-link">
+                        <div class="details">
+
+                            <div class="author">
+                                <img src="assets/img/yt-raditya dika.jpg"
+                                    style="border-radius: 50%; height: 25px; width: 25px; margin-left: 7.5px;" alt="">
+                            </div>
+                            <div class="title">
+                                <span style="margin-top: 5px;">Raditya Dika</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="nav-link">
+                        <div class="details">
+
+                            <div class="author">
+                                <img src="assets/img/yt-web programming.jpg"
+                                    style="border-radius: 50%; height: 25px; width: 25px; margin-left: 7.5px;" alt="">
+                            </div>
+                            <div class="title">
+                                <span style="margin-top: 5px;">Web Programming Unpas</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="nav-link">
+                        <div class="details">
+
+                            <div class="author">
+                                <img src="assets/img/yt-kejar mimpi.jpg"
+                                    style="border-radius: 50%; height: 25px; width: 25px; margin-left: 7.5px;" alt="">
+                            </div>
+                            <div class="title">
+                                <span style="margin-top: 5px;">Kejar Mimpi</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="nav-link">
+                        <div class="details">
+
+                            <div class="author">
+                                <img src="assets/img/yt-programmer zaman now.jpg"
+                                    style="border-radius: 50%; height: 25px; width: 25px; margin-left: 7.5px;" alt="">
+                            </div>
+                            <div class="title">
+                                <span style="margin-top: 5px;">Programmer Zaman Now</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="nav-link">
+                        <div class="details">
+
+                            <div class="author">
+                                <img src="assets/img/yt-home free.jpg"
+                                    style="border-radius: 50%; height: 25px; width: 25px; margin-left: 7.5px;" alt="">
+                            </div>
+                            <div class="title">
+                                <span style="margin-top: 5px;">Home Free</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="nav-link">
+                        <div class="details">
+
+                            <div class="author">
+                                <img src="assets/img/yt-simply electronics.jpg"
+                                    style="border-radius: 50%; height: 25px; width: 25px; margin-left: 7.5px;" alt="">
+                            </div>
+                            <div class="title">
+                                <span style="margin-top: 5px;">Simply Electronics</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="nav-link">
+                        <div class="details">
+
+                            <div class="author">
+                                <img src="assets/img/yt-ibm technology.jpg"
+                                    style="border-radius: 50%; height: 25px; width: 25px; margin-left: 7.5px;" alt="">
+                            </div>
+                            <div class="title">
+                                <span style="margin-top: 5px;">IBM Technology</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="nav-link">
+                        <div class="details">
+
+                            <div class="author">
+                                <img src="assets/img/yt-machine learning.jpg"
+                                    style="border-radius: 50%; height: 25px; width: 25px; margin-left: 7.5px;" alt="">
+                            </div>
+                            <div class="title">
+                                <span style="margin-top: 5px;">Machine Learning University</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="nav-link">
+                        <div class="details">
+
+                            <div class="author">
+                                <img src="assets/img/yt-itdel.jpg"
+                                    style="border-radius: 50%; height: 25px; width: 25px; margin-left: 7.5px;" alt="">
+                            </div>
+                            <div class="title">
+                                <span style="margin-top: 5px;">Institut Teknologi Del</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="nav-link">
+                        <div class="details">
+
+                            <div class="author">
+                                <img src="assets/img/yt-programmer pemula.jpg"
+                                    style="border-radius: 50%; height: 25px; width: 25px; margin-left: 7.5px;" alt="">
+                            </div>
+                            <div class="title">
+                                <span style="margin-top: 5px;">Programmer Pemula</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="nav-link">
+                        <div class="details">
+
+                            <div class="author">
+                                <img src="assets/img/yt-layanan coding.jpg"
+                                    style="border-radius: 50%; height: 25px; width: 25px; margin-left: 7.5px;" alt="">
+                            </div>
+                            <div class="title">
+                                <span style="margin-top: 5px;">Layanan Coding</span>
+                            </div>
+                        </div>
+                    </a>
+                </span>
+                <!-- akhir show more -->
+
+                <!-- memanggil function javascript myFunction -->
+                <a class="nav-link">
+                    <i class="material-icons" onclick="myFunction()">keyboard_arrow_down</i>
+                    <span style="margin-top: 5px;" onclick="myFunction()" id="myBtn">Show 60 more </span>
+                </a>
+                <!-- akhir panggilan -->
+                <hr>
+                <br>
+                <a class="nav-link-a">
+                    <p>
+                        <span>About</span>
+                        <span>Press</span>
+                        <span>Copyright</span>
+                    </p>
+                    <p>
+                        <span>Contact us</span>
+                        <span>Creators</span>
+                    </p>
+                    <p>
+                        <span>Advertise</span>
+                        <span>Developers</span>
+                    </p>
+                    <br>
+                    <p>
+                        <span>Terms</span>
+                        <span>Privacy</span>
+                        <span>Policy & Safety</span>
+                    </p>
+                    <p>
+                        <span>How Youtube works</span>
+                    </p>
+                    <p>
+                        <span>Test new features</span>
+                    </p>
+                    <br>
+                    <p>
+                        <span>&#169; 2022 Google LLC</span>
+                    </p>
+                </a>
+            </div>
+            <!-- akhir navigasi -->
+        </div>
+        <!-- akhir sidebar -->
+
+        <!-- content -->
+        <div class="content">
+            <div class="point">
+                <!-- css build shady -->
+                <div class="shade">
+                    <a>
+                        <span class="shade2 active" style="background-color: black; color: white;">All</span>
+                    </a>
+                    <a>
+                        <span class="shade2">Mixes</span>
+                    </a>
+                    <a>
+                        <span class="shade2">Acoustic guitar</span>
+                    </a>
+                    <a>
+                        <span class="shade2">Music</span>
+                    </a>
+                    <a>
+                        <span class="shade2">Playlist</span>
+                    </a>
+                    <a>
+                        <span class="shade2">Google Cloud Platform</span>
+                    </a>
+                    <a>
+                        <span class="shade2">Albums</span>
+                    </a>
+                    <a>
+                        <span class="shade2">Computer Science</span>
+                    </a>
+                    <a>
+                        <span class="shade2" id="dots">Contemporery Worship Music</span>
+                    </a>
+                    <a></a>
+                    <span class="material-icons">arrow_forward_ios</span>
+                    </a>
+                </div>
+                <!-- akhir shade -->
+            </div>
+
+            <!-- video-->
+            <div class="point2">
+                <div class="videos">
+                    <div class="video">
+                        <div class="thumbnail">
+                            <img src="assets/img/yt-1.webp" alt="" />
+                        </div>
+                        <div class="details">
+                            <div class="author">
+                                <img src="assets/img/yt-luthfi.jpg" alt="" />
+                            </div>
+                            <!-- title -->
+                            <div class="title">
+                                <h3>
+                                    Luthfi Aulia - Langit Favorit feat. Ghazi Alhabsyi (Alternate Version)
+                                </h3>
+                                <a href="">
+                                    Luthfi Aulia
+                                </a>
+                                <span> 1.1M views1 month ago </span>
+                            </div>
+                            <!-- akhir title -->
+                        </div>
+                    </div>
+
+                    <div class="videos">
+                        <div class="video">
+                            <div class="thumbnail">
+                                <img src="assets/img/yt-2.webp" alt="" />
+                            </div>
+                            <div class="details">
+                                <div class="author">
+                                    <img src="assets/img/yt-jerome.jpg" alt="" />
+                                </div>
+                                <!-- title -->
+                                <div class="title">
+                                    <h3>
+                                        PESTA 9 JUTA SUBSCRIBERS! 9000KCAL KARAAGE, SATE, TAHU ISI, 9 ORANG!
+                                    </h3>
+                                    <a href="">
+                                        Jerome Polin
+                                    </a>
+                                    <span> 1.6M views 2 days ago </span>
+                                </div>
+                                <!-- akhir title -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="videos">
+                        <div class="video">
+                            <div class="thumbnail">
+                                <img src="assets/img/yt-3.webp" alt="" />
+                            </div>
+                            <div class="details">
+                                <div class="author">
+                                    <img src="assets/img/yt-edsheeran.jpg" alt="" />
+                                </div>
+                                <!-- title -->
+                                <div class="title">
+                                    <h3>
+                                        Ed Sheeran - Supermarket Flowers [Official Audio]
+                                    </h3>
+                                    <a href="">
+                                        Ed Sheeran
+                                    </a>
+                                    <span> 142M Views • 5 years Ago </span>
+                                </div>
+                                <!-- akhir title -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="videos">
+                        <div class="video">
+                            <div class="thumbnail">
+                                <img src="assets/img/yt-4.jpg" alt="" />
+                            </div>
+                            <div class="details">
+                                <div class="author">
+                                    <img src="assets/img/yt-erika.jpg   " alt="" />
+                                </div>
+                                <!-- title -->
+                                <div class="title">
+                                    <h3>
+                                        『Lemon』- Yonezu Kenshi 米津玄師 -【Cover　歌ってみた】
+                                    </h3>
+                                    <a href="">
+                                        Erikacang
+                                    </a>
+                                    <span> 4M Views • 5 Months Ago </span>
+                                </div>
+                                <!-- akhir title -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="videos">
+                        <div class="video">
+                            <div class="thumbnail">
+                                <img src="assets/img/yt-5.webp" alt="" />
+                            </div>
+                            <div class="details">
+                                <div class="author">
+                                    <img src="assets/img/yt-sony.jpg   " alt="" />
+                                </div>
+                                <!-- title -->
+                                <div class="title">
+                                    <h3>
+                                        KRK Telugu Promo 2 | Vijay Sethupathi, Nayanthara, Samantha | Anirudh
+                                        Ravichander |
+                                        Vignesh Shivan
+                                    </h3>
+                                    <a href="">
+                                        Sony Music South
+                                    </a>
+                                    <span> 57k Views • 2 hours Ago </span>
+                                </div>
+                                <!-- akhir title -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="videos">
+                        <div class="video">
+                            <div class="thumbnail">
+                                <img src="assets/img/yt-6.webp" alt="" />
+                            </div>
+                            <div class="details">
+                                <div class="author">
+                                    <img src="assets/img/yt-worship.jpg   " alt="" />
+                                </div>
+                                <div class="title">
+                                    <h3>
+                                        Sejauh Timur Dari Barat - Dengan Apa kan Kubalas | VOICE OF WORSHIP
+                                    </h3>
+                                    <a href="">
+                                        Voice Of Worship
+                                    </a>
+                                    <span> 2k Views • 2 day Ago </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="videos">
+                        <div class="video">
+                            <div class="thumbnail">
+                                <img src="assets/img/yt-7.jpg" alt="" />
+                            </div>
+                            <div class="details">
+                                <div class="author">
+                                    <img src="assets/img/yt-sam smith.jpg" alt="" />
+                                </div>
+                                <!-- title -->
+                                <div class="title">
+                                    <h3>
+                                        Too Good At Goodbyes (Official Video)
+                                    </h3>
+                                    <a href="">
+                                        SAM SMITH
+                                    </a>
+                                    <span> 13M Views • 5 Months Ago </span>
+                                </div>
+                                <!-- akhir title -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="videos">
+                        <div class="video">
+                            <div class="thumbnail">
+                                <img src="assets/img/yt-8.webp" alt="" />
+                            </div>
+                            <div class="details">
+                                <div class="author">
+                                    <img src="assets/img/yt-bts.jpg" alt="" />
+                                </div>
+                                <!-- title -->
+                                <div class="title">
+                                    <h3>
+                                        [EPISODE] BTS (방탄소년단) ‘Butter’ Jacket Shoot Sketch
+                                    </h3>
+                                    <a href="">
+                                        BANGTANTV
+                                    </a>
+                                    <span> 10M Views • 9 Months Ago </span>
+                                </div>
+                                <!-- akhir title -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="videos">
+                        <div class="video">
+                            <div class="thumbnail">
+                                <img src="assets/img/yt-5.webp" alt="" />
+                            </div>
+                            <div class="details">
+                                <div class="author">
+                                    <img src="assets/img/yt-sony.jpg   " alt="" />
+                                </div>
+                                <!-- title -->
+                                <div class="title">
+                                    <h3>
+                                        KRK Telugu Promo 2 | Vijay Sethupathi, Nayanthara, Samantha | Anirudh
+                                        Ravichander |
+                                        Vignesh Shivan
+                                    </h3>
+                                    <a href="">
+                                        Sony Music South
+                                    </a>
+                                    <span> 57k Views • 2 hours Ago </span>
+                                </div>
+                                <!-- akhir title -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="videos">
+                        <div class="video">
+                            <div class="thumbnail">
+                                <img src="assets/img/yt-6.webp" alt="" />
+                            </div>
+                            <div class="details">
+                                <div class="author">
+                                    <img src="assets/img/yt-worship.jpg   " alt="" />
+                                </div>
+                                <!-- title -->
+                                <div class="title">
+                                    <h3>
+                                        Sejauh Timur Dari Barat - Dengan Apa kan Kubalas | VOICE OF WORSHIP
+                                    </h3>
+                                    <a href="">
+                                        Voice Of Worship
+                                    </a>
+                                    <span> 2k Views • 2 day Ago </span>
+                                </div>
+                                <!-- akhir title -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="videos">
+                        <div class="video">
+                            <div class="thumbnail">
+                                <img src="assets/img/yt-7.jpg" alt="" />
+                            </div>
+                            <div class="details">
+                                <div class="author">
+                                    <img src="assets/img/yt-sam smith.jpg" alt="" />
+                                </div>
+                                <!-- title -->
+                                <div class="title">
+                                    <h3>
+                                        Too Good At Goodbyes (Official Video)
+                                    </h3>
+                                    <a href="">
+                                        SAM SMITH
+                                    </a>
+                                    <span> 13M Views • 5 Months Ago </span>
+                                </div>
+                                <!-- akhir title -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="videos">
+                        <div class="video">
+                            <div class="thumbnail">
+                                <img src="assets/img/yt-8.webp" alt="" />
+                            </div>
+                            <div class="details">
+                                <div class="author">
+                                    <img src="assets/img/yt-bts.jpg" alt="" />
+                                </div>
+                                <!-- title -->
+                                <div class="title">
+                                    <h3>
+                                        [EPISODE] BTS (방탄소년단) ‘Butter’ Jacket Shoot Sketch
+                                    </h3>
+                                    <a href="">
+                                        BANGTANTV
+                                    </a>
+                                    <span> 10M Views • 9 Months Ago </span>
+                                </div>
+                                <!-- akhir title -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- akhir video -->
+    </main>
+
+</body>
+</html>
